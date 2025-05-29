@@ -1,4 +1,5 @@
 name: .NET Build and Test - FilmesApi
+
 on:
   push:
     branches: [ develop, master, release/** ]
@@ -21,19 +22,22 @@ jobs:
           --health-retries 5
 
     steps:
-    - name: Checkout source code
-      uses: actions/checkout@v3
+      - name: Checkout source code
+        uses: actions/checkout@v3
 
-    - name: Setup .NET SDK
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '9.0.x' # Troque se estiver usando outra versão
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '9.0.x' # Troque se estiver usando outra versão
 
-    - name: Restore dependencies
-      run: dotnet restore FilmesApi.sln
+      - name: Show file structure (debug)
+        run: ls -R
 
-    - name: Build solution
-      run: dotnet build FilmesApi.sln --no-restore --configuration Release
+      - name: Restore dependencies
+        run: dotnet restore FilmesApiSolution/FilmesApi.sln
 
-    - name: Run tests
-      run: dotnet test FilmesApi.sln --no-build --verbosity normal
+      - name: Build solution
+        run: dotnet build FilmesApiSolution/FilmesApi.sln --no-restore --configuration Release
+
+      - name: Run tests
+        run: dotnet test FilmesApiSolution/FilmesApi.sln --no-build --verbosity normal
