@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projetos\\FilmesApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A36C209A-C3EF-4D41-A6D8-0526EE5093B8}|FilmesApi.csproj|c:\\projetos\\filmesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A36C209A-C3EF-4D41-A6D8-0526EE5093B8}|FilmesApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A36C209A-C3EF-4D41-A6D8-0526EE5093B8}|FilmesApi.csproj|c:\\projetos\\filmesapi\\controllers\\filmescontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A36C209A-C3EF-4D41-A6D8-0526EE5093B8}|FilmesApi.csproj|solutionrelative:controllers\\filmescontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projetos\\FilmesApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Projetos\\FilmesApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T20:11:52.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FilmesControllers.cs",
+              "DocumentMoniker": "C:\\Projetos\\FilmesApi\\Controllers\\FilmesControllers.cs",
+              "RelativeDocumentMoniker": "Controllers\\FilmesControllers.cs",
+              "ToolTip": "C:\\Projetos\\FilmesApi\\Controllers\\FilmesControllers.cs",
+              "RelativeToolTip": "Controllers\\FilmesControllers.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T20:08:37.457Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
