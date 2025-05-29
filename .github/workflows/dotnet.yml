@@ -34,10 +34,10 @@ jobs:
         run: ls -R
 
       - name: Restore dependencies
-        run: dotnet restore FilmesApiSolution/FilmesApi.sln
+        run: dotnet restore FilmesApi/FilmesApiSolution.sln
 
       - name: Build solution
-        run: dotnet build FilmesApiSolution/FilmesApi.sln --no-restore --configuration Release
+        run: dotnet build FilmesApi/FilmesApiSolution.sln --no-restore --configuration Release
 
       - name: Run tests
-        run: dotnet test FilmesApiSolution/FilmesApi.sln --no-build --verbosity normal
+        run: dotnet test FilmesApi/FilmesApiSolution.sln --no-build --verbosity normal
