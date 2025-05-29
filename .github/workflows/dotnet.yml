@@ -1,14 +1,12 @@
-name: .NET Build and Test
-
+name: .NET Build and Test - FilmesApi
 on:
   push:
-    branches: [ develop, master ]
+    branches: [ develop, master, release/** ]
   pull_request:
-    branches: [ develop, master ]
+    branches: [ develop, master, release/** ]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     services:
@@ -17,24 +15,25 @@ jobs:
         ports:
           - 27017:27017
         options: >-
-          --health-cmd "mongosh --eval 'db.adminCommand(\"ping\")'" 
-          --health-interval 10s 
-          --health-timeout 5s 
+          --health-cmd "mongosh --eval 'db.adminCommand(\"ping\")'"
+          --health-interval 10s
+          --health-timeout 5s
           --health-retries 5
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout source code
+      uses: actions/checkout@v3
 
     - name: Setup .NET SDK
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '9.0.x' # ou a versão que você está usando
+        dotnet-version: '9.0.x' # Troque se estiver usando outra versão
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore FilmesApi.sln
 
-    - name: Build
-      run: dotnet build --no-restore --configuration Release
+    - name: Build solution
+      run: dotnet build FilmesApi.sln --no-restore --configuration Release
 
     - name: Run tests
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test FilmesApi.sln --no-build --verbosity normal
