@@ -21,3 +21,12 @@ x86/
 # Outros arquivos temporários
 *.log
 *.vsix
+
+# Arquivos temporários de SQLite usados por ferramentas
+*.db-shm
+*.db-wal
+*.db
+
+# Copilot / IntelliSense
+CopilotIndices/
+FileContentIndex/
